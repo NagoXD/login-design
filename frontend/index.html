@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dccd7af79f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="top-header">
+                <h2>Login</h2>
+                <h3>Welcome back user!</h3>
+            </div>
+
+            <div class="icons">
+                <a href="" class="icon-block">
+                    <i class="fa-brands fa-twitter"><span>Twitter</span></i></a>
+                <a href="" class="icon-block">
+                    <i class="fa-brands fa-google"><span class="o">o</span><span class="oe1">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span></i></a>
+                <a href="" class="icon-block">
+                    <i class="fa-brands fa-facebook"><span>acebook</span></i></a>
+                    </div>
+
+            <div class="intro">
+                <div class="input-box">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="myInput">
+                </div>
+                <div class="down-header">
+                    <div class="btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                      <div class="below-header">
+                        <input type="checkbox"><label>Remember me?</label>
+                        <input type="checkbox" onclick="ShowHide()"><label>Show Password</label>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function ShowHide() {
+          let input = document.getElementById("myInput");
+          if (input.type === "password") {
+           input.type = "text";
+          } else {
+            input.type = "password";
+          }
+        }
+        </script>
+</body>
+</html>
